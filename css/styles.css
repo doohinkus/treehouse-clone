@@ -82,7 +82,8 @@ img{
 
 .box {
   margin-top: 1em;
-  /*for squishy use width: 45% margin-left: 2%*/
+  /*for squishy use width: 45% margin-left: 3%*/
+  /*use max-width:600px for stacking behavior how to cetner though?*/
   max-width: 45%;
   margin-left: 3%;
   /*margin-left: 2%;*/
