@@ -16,12 +16,15 @@
 body {
   background-color: #ECEEEF;
 }
+span{
+  vertical-align: middle; n
+}
 /*always use a clear fix for floated elements*/
 .navigation {
   /*border: 1px solid black;*/
   overflow: auto;
   padding: 20px;
-	box-shadow: 0 5px 5px -5px #333;
+	box-shadow: 0 10px 10px -10px #444;
 }
 
 /*nav head title*/
@@ -50,9 +53,10 @@ body {
   border-left: 1px solid #999;
 }
 
-.navigationRight img{
+.navigationRight img, .greenBoxHeader img{
   width: 40px;
   vertical-align: middle;
+  opacity: .7;
 
 }
 .navigationRight span:nth-child(4){
@@ -69,10 +73,34 @@ body {
   height: 20px;
   background-color: #E25C63;
   position: absolute;
-
-
+}
+/*crafty responsive styles from w3c*/
+/*basically floats everything left and adds some padding*/
+/*http://www.w3schools.com/css/css_rwd_grid.asp*/
+.box {
+  margin-top: 1em;
+  width: 50%;
+  float: left;
+  /*padding: 15px;*/
+  border-radius: 7px;
+  background-color: #fff;
+  /*border: 1px solid black;*/
+  overflow: hidden;
+}
+.box-padding{
+  padding: 1em;
+}
+.greenBoxHeader{
+  background-color: #2C9676;
 
 }
+/*bascially adds a shim below the row to make everything even height*/
+.content::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
 /*.navigation span:nth-child(n+2){
   font-weight: bold;
   color: red;
