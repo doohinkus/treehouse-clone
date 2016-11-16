@@ -79,15 +79,22 @@ img{
 /*crafty responsive styles from w3c*/
 /*basically floats everything left and adds some padding*/
 /*http://www.w3schools.com/css/css_rwd_grid.asp*/
+
 .box {
   margin-top: 1em;
-  width: 50%;
+  /*for squishy use width: 45% margin-left: 2%*/
+  max-width: 45%;
+  margin-left: 3%;
+  /*margin-left: 2%;*/
+  /*margin:auto;*/
+
   float: left;
   /*padding: 15px;*/
   border-radius: 7px;
   background-color: #fff;
   /*border: 1px solid black;*/
   overflow: hidden;
+  box-shadow: 0 2px 0 0px #ccc;
 }
 .box-padding{
   padding: 1em;
@@ -104,28 +111,72 @@ img{
 .boxContent p{
   color: #7D8E90;
   margin-bottom: 1.5em;
+  overflow: auto;
 }
 .greenBoxHeader{
   background-color: #2C9676;
+}
+.green{
+  color: #2C9676;
+}
+.pink{
+  color:#F092B0;
+}
+.purple{
+  color: #838CC7;
+}
+.purpleBoxHeader{
+  background-color: #838CC7;
+}
+.pinkBoxHeader{
+  background-color: #F092B0;
+}
+.boxHead{
+  color: #fff;
+}
+.boxHead img{
+  width:21px;
   vertical-align: middle;
   font-weight: bold;
   color: #fff;
   font-size: 9pt;
   letter-spacing: 0px;
-}
-.greenBoxHeader img{
-  width:21px;
-
   filter: invert(1);
+}
+
+a.roundLink{
+  border: 2px solid #ECEEEF;
+  border-radius: 18px;
+  padding:0 15px;
+	line-height:32px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+a.left{
+  float: left;
+
+  /*SAME COLOR AS HEADING*/
+}
+/*5th child????*/
+a.roundLink:nth-child(5){
+  margin-left: 10px;
+  color: #7D8E90;
+
+}
+a.right{
+  float: right;
+  border-radius: 35px;
+  color: #7D8E90;
+
 }
 .small img{
   width: 8px;
   margin-left: 10px;
   opacity: .5;
   filter: invert(1);
-
 }
-.greenBoxHeader span:last-child{
+.boxHead span:last-child{
   float: right;
   vertical-align: middle;
 }
@@ -136,13 +187,21 @@ img{
   display: block;
 }
 
+
 /*.navigation span:nth-child(n+2){
   font-weight: bold;
   color: red;
   float: right;
 }*/
+.content{
+  /*border: 1px solid black;*/
+  margin:auto;
+  overflow:auto;
+}
 .container{
   /*border: 1px solid black;*/
   margin: 0 auto;
   width: 85%;
+
+
 }
