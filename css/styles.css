@@ -17,7 +17,10 @@ body {
   background-color: #ECEEEF;
 }
 span{
-  vertical-align: middle; n
+  vertical-align: middle;
+}
+img{
+    vertical-align: middle;
 }
 /*always use a clear fix for floated elements*/
 .navigation {
@@ -53,10 +56,9 @@ span{
   border-left: 1px solid #999;
 }
 
-.navigationRight img, .greenBoxHeader img{
+.navigationRight img{
   width: 40px;
-  vertical-align: middle;
-  opacity: .7;
+  opacity: .3;
 
 }
 .navigationRight span:nth-child(4){
@@ -90,9 +92,42 @@ span{
 .box-padding{
   padding: 1em;
 }
+.boxContent h2{
+  font-size: 11pt;
+  color: #7D8E90;
+}
+.boxContent h3{
+  font-size: 15pt;
+  color: #4C5759;
+  margin-bottom: 15px;
+}
+.boxContent p{
+  color: #7D8E90;
+  margin-bottom: 1.5em;
+}
 .greenBoxHeader{
   background-color: #2C9676;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #fff;
+  font-size: 9pt;
+  letter-spacing: 0px;
+}
+.greenBoxHeader img{
+  width:21px;
 
+  filter: invert(1);
+}
+.small img{
+  width: 8px;
+  margin-left: 10px;
+  opacity: .5;
+  filter: invert(1);
+
+}
+.greenBoxHeader span:last-child{
+  float: right;
+  vertical-align: middle;
 }
 /*bascially adds a shim below the row to make everything even height*/
 .content::after{
@@ -109,5 +144,5 @@ span{
 .container{
   /*border: 1px solid black;*/
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
 }
