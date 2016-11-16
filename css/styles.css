@@ -37,11 +37,40 @@ body {
 }
 .navigationRight span{
     padding-right: 10px;
+    padding-left: 10px;
     vertical-align: middle;
 }
 .navigationRight span:first-child{
+    font-weight: bold;
     font-size: 15pt;
     color: #A3ADB2;
+
+}
+.navigationRight span:nth-child(n+3){
+  border-left: 1px solid #999;
+}
+
+.navigationRight img{
+  width: 40px;
+  vertical-align: middle;
+
+}
+.navigationRight span:nth-child(4){
+  position: relative;
+}
+.navigationRight span:nth-child(4):after{
+  content:"7";
+  color:white;
+  text-align: center;
+  padding-top: 1px;
+  border-radius: 3px;
+  left: 32px;
+  width: 15px;
+  height: 20px;
+  background-color: #E25C63;
+  position: absolute;
+
+
 
 }
 /*.navigation span:nth-child(n+2){
