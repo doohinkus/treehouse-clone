@@ -85,7 +85,7 @@ img{
   /*for squishy use width: 45% margin-left: 3%*/
   /*use max-width:600px for stacking behavior how to cetner though?*/
   width: 45%;
-  min-width: 400px;
+
   margin-left: 3%;
   /*margin-left: 2%;*/
   /*margin:auto;*/
@@ -97,6 +97,26 @@ img{
   /*border: 1px solid black;*/
   overflow: hidden;
   box-shadow: 0 2px 0 0px #ccc;
+}
+@media (max-width: 850px) {
+  .box {
+  margin-top: 1em;
+  /*for squishy use width: 45% margin-left: 3%*/
+  /*use max-width:600px for stacking behavior how to cetner though?*/
+  width: 100%;
+    margin-left: auto;
+
+  /*margin-left: 2%;*/
+  /*margin:auto;*/
+
+  float: none;
+  /*padding: 15px;*/
+  border-radius: 7px;
+  background-color: #fff;
+  /*border: 1px solid black;*/
+  overflow: hidden;
+  box-shadow: 0 2px 0 0px #ccc;
+}
 }
 .box-padding{
   padding: 1em;
